@@ -6,16 +6,33 @@
     "author": "Balti Ruiz",
     "license": "ISC",
     "scripts": {
-        "start": "npx ts-node src/index.ts",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "npx ts-node src/server.ts",
+        "createDatabase": "npx ts-node src/startup/databaseStartup.ts",
+        "test": "jest --config jest.config.json"
     },
     "dependencies": {
+        "@types/bcrypt": "^5.0.0",
         "@types/express": "^4.17.13",
+        "@types/jest": "^27.4.1",
+        "@types/jsonwebtoken": "^8.5.8",
+        "@types/lodash": "^4.14.180",
         "@types/node": "^17.0.21",
+        "@types/pg": "^8.6.5",
         "@typescript-eslint/eslint-plugin": "^5.15.0",
         "@typescript-eslint/parser": "^5.15.0",
+        "awilix": "^7.0.0",
+        "axios": "^0.26.1",
+        "bcrypt": "^5.0.1",
+        "body-parser": "^1.19.2",
+        "dotenv": "^16.0.0",
         "eslint": "^8.11.0",
         "express": "^4.17.3",
+        "jest": "^27.5.1",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "pg": "^8.7.3",
+        "sequelize": "^6.17.0",
+        "ts-jest": "^27.1.3",
         "ts-node": "^10.7.0"
     }
 }

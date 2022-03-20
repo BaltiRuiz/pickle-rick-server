@@ -1,0 +1,28 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "name": "Debug Pickle-Rick",
+            "request": "launch",
+            "type": "node",
+            "program": "src/server.ts",
+            "runtimeExecutable": "${workspaceFolder}\\node_modules\\.bin\\ts-node",
+            "sourceMaps": true
+        },
+        {
+            "name": "Test files",
+            "request": "launch",
+            "type": "node",
+            "runtimeExecutable": "${workspaceFolder}\\node_modules\\.bin\\jest",
+            "args": [
+                "--config",
+                "jest.config.json"
+            ],
+            "env": {
+                "API_KEY": "SomeKey",
+                "TOKEN_EXPIRATION": "1d",
+            },
+            "outputCapture": "std"
+        }
+    ]
+}
