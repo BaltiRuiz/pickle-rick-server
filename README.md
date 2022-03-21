@@ -1,5 +1,5 @@
 ## Installation instructions
-- Download and install PostgreSQL if you do not have it already.
+- Download and install Node and PostgreSQL if you do not have them already.
 - Run _npm i_ command in both _client_ and _server_ folders.
 - Run _npm run createDatabase_ command within _server_ folder.
 - Run _npm start_ command in both _client_ and _server_ folders.
